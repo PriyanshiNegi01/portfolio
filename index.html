@@ -38,7 +38,13 @@
 }
 .card {
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
+.card:hover {
+  transform: translateY(-10px); /* Moves the card slightly upwards */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
 .card-img-top {
   max-height: 180px; /* Adjust this value to fit the image properly in the card */
   object-fit: cover; /* This makes sure the image covers the area properly */
@@ -347,7 +353,8 @@ html {
         <div class="col-lg-2 col-md-4 mb-4">
           <a href="https://drive.google.com/file/d/1a6pehZkH8g_Ctu8ir1PFXa6xHiuB9_uH/view?usp=sharing" target="_blank">
             <img src="icons/doc.png" alt="CV" class="social-icon">
-                My Resume              </a>
+                My Resume              
+          </a>
         </div>
         <!--
         <div class="col-lg-2 col-md-4 mb-4">
