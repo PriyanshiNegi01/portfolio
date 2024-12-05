@@ -112,35 +112,53 @@
 }
 
 /* Additional CSS for Skills Section */
+/* Additional CSS for Skills Section */
 .skills-section h2 {
   margin-bottom: 40px;
   font-size: 2.5rem;
 }
-.skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+.skill-item {
+  background-color: #f8f9fa; /* Background color for the boxes */
+  padding: 20px; /* Adds padding inside the box */
+  border-radius: 10px; /* Rounded corners for the box */
+  display: flex; /* Centers the images inside the box */
+  flex-direction: column; /* Aligns the image and text vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers the content horizontally */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+  margin-bottom: 30px; /* Adds spacing between the skill boxes */
+  height: 250px; /* Ensures all boxes have the same height */
 }
-.skills-section .card-img-top {
-  padding: 20px; /* Add padding around your images if needed */
-  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-  height: 180px; /* Fixed height for consistency */
-  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+
+.skill-item img {
+  width: 100px; /* Fixed width for all images */
+  height: 100px; /* Fixed height for all images */
+  object-fit: contain; /* Ensures that the logos maintain aspect ratio within the given size */
+  margin-bottom: 15px; /* Spacing between the image and the name */
 }
-.skills-section .card-body {
-  padding: 15px;
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px; /* Adjusts spacing between the name and image */
+  text-align: center; /* Centers the software name text */
 }
-.skills-section .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
+
+/* Grid spacing between columns */
+@media (min-width: 768px) {
+  .skill-item {
+    margin-right: 15px; /* Adds horizontal spacing between the boxes */
+  }
 }
-.skills-section .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
+
+/* Responsive grid settings */
+@media (max-width: 767px) {
+  .skill-item {
+    margin-right: 0; /* Removes horizontal spacing on smaller screens */
+  }
 }
-.skills-section .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
+
 
 /* Additional CSS for Contact Section */
 .contact-section {
@@ -241,8 +259,61 @@ html {
 </section>
 
 
+<!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-light">
+    <div class="container">
+        <h2 class="text-center">Skills</h2>
+        <div class="row">
+            <!-- Skill 1: Python -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-item">
+                    <img src="images/skills/Python.png" alt="Python">
+                    <p class="skill-name">Python</p>
+                </div>
+            </div>
+            <!-- Skill 2: SQL -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-item">
+                    <img src="images/skills/db.png" alt="SQL">
+                    <p class="skill-name">SQL</p>
+                </div>
+            </div>
+            <!-- Skill 3: Power BI -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-item">
+                    <img src="images/skills/PowerBI.png" alt="Power BI">
+                    <p class="skill-name">Power BI</p>
+                </div>
+            </div>
+            <!-- Skill 4: Machine Learning -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-item">
+                    <img src="images/skills/ML.png" alt="Machine Learning">
+                    <p class="skill-name">Machine Learning</p>
+                </div>
+            </div>
+            <!-- Skill 5: Tableau -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-item">
+                    <img src="images/skills/Tableau.png" alt="Tableau">
+                    <p class="skill-name">Tableau</p>
+                </div>
+            </div>
+            <!-- Skill 6: Excel -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="skill-item">
+                    <img src="images/skills/Excel.png" alt="Excel">
+                    <p class="skill-name">Excel</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- Projects Section -->
-<section id="projects" class="projects-section bg-light">
+<section id="projects" class="projects-section bg-white">
     <div class="container">
       <h2 class="text-center">Projects</h2>
       <div class="row">
@@ -314,83 +385,7 @@ html {
     </div>
   </section>  
 
-
-<!-- Skills Section -->
-<section id="skills" class="skills-section bg-white" id="skills">
-    <div class="container">
-      <h2 class="text-center">Skills</h2>
-      <div class="row">
-        <!-- Skill 1 -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/skills/Python.png" class="card-img-top" alt="Python">
-            <div class="card-body">
-              <h5 class="card-title">Python</h5>
-              <p class="card-text">
-                  Python is a versatile programming language used for data analysis, machine learning, automation, and web 
-                  development. I leverage Python's rich ecosystem of libraries like pandas, numpy, and scikit-learn for data 
-                  manipulation and analysis.
-              </p>
-              <!--
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-              -->
-            </div>
-          </div>
-        </div>
-        <!-- Skill 2 -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/skills/SQL.png" class="card-img-top" alt="SQL">
-            <div class="card-body">
-              <h5 class="card-title">SQL</h5>
-              <p class="card-text">
-                  SQL (Structured Query Language) is essential for querying and managing databases. I use SQL for data extraction, 
-                  transformation, and analysis, optimizing queries for performance and extracting insights from complex datasets.
-              </p>
-              <!--
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-              -->
-            </div>
-          </div>
-        </div>
-        <!-- Skill 3 -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/skills/PowerBI.png" class="card-img-top" alt="Power BI">
-            <div class="card-body">
-              <h5 class="card-title">Power BI</h5>
-              <p class="card-text">
-                  Power BI is a powerful business analytics tool for visualizing and interpreting data. I utilize Power BI to create 
-                  interactive reports and dashboards that enable data-driven decision-making across various business functions.
-              </p>
-              <!--
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-              -->
-            </div>
-          </div>
-        </div>
-        <!-- Skill 4 -->
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img src="images/skills/ML.png" class="card-img-top" alt="Machine Learning">
-            <div class="card-body">
-              <h5 class="card-title">Machine Learning</h5>
-              <p class="card-text">
-                  Machine learning (ML) involves building predictive models and algorithms to analyze data and make intelligent decisions. 
-                  I apply ML techniques such as classification, regression, and clustering to solve complex problems 
-                  and generate actionable insights.
-              </p>
-              <!--
-              <a href="#" class="btn btn-outline-primary">Link to course or bootcamp</a>
-              -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</section>
   
-
 <!-- Contact Me Section -->
 <section id="contact" class="contact-section text-center text-white bg-dark">
     <div class="container">
@@ -463,10 +458,10 @@ html {
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
