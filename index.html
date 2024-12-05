@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <style>
-    /* Home Section Styling */
+/* CSS for Home Section */
 .home-section {
   position: relative;
   height: 100vh;
@@ -21,7 +21,7 @@
   overflow: hidden;
 }
 
-/* Centered Content Styling */
+/* Centered Content */
 .home-content {
   position: relative;
   color: white;
@@ -89,6 +89,7 @@
 .card {
   box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  border-radius: 10px; /* Rounding the corners of the card */
 }
 .card:hover {
   transform: translateY(-10px); /* Moves the card slightly upwards */
@@ -97,6 +98,8 @@
 .card-img-top {
   max-height: 180px; /* Adjust this value to fit the image properly in the card */
   object-fit: cover; /* This makes sure the image covers the area properly */
+  border-top-left-radius: 10px; /* Rounding the corners of the img */
+  border-top-right-radius: 10px; /* Rounding the corners of the img */
 }
 .card-body {
   padding: 15px;
