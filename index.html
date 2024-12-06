@@ -126,9 +126,10 @@
   flex-direction: column; /* Aligns the image and text vertically */
   justify-content: center; /* Centers content vertically */
   align-items: center; /* Centers the content horizontally */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
   margin-bottom: 30px; /* Adds spacing between the skill boxes */
   height: 250px; /* Ensures all boxes have the same height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effects */
 }
 
 .skill-item img {
@@ -143,6 +144,12 @@
   font-weight: bold;
   margin-top: 10px; /* Adjusts spacing between the name and image */
   text-align: center; /* Centers the software name text */
+}
+
+/* Hover effect for the skill cards */
+.skill-item:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
 }
 
 /* Grid spacing between columns */
