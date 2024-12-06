@@ -186,6 +186,11 @@
   .contact-section a:hover {
     color: #ddd; /* Color when hovering over the link */
   }
+
+  /* CSS for separator line between Contact section and Copyright footer*/
+  .separator-line {
+    border-top: 1px solid #d3d3d3; /* Light grey color */
+  }  
   
   /* CSS for Sticky Navbar */
   .navbar {
