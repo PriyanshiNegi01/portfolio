@@ -253,6 +253,7 @@
   
   /* Additional CSS for Contact Section */
   .contact-section {
+    background-color: black;
     padding: 50px 0;
   }
   .contact-section h2 {
@@ -266,6 +267,8 @@
   .social-icon {
     width: 50px; /* Size of your icons */
     margin-bottom: 10px;
+    border-radius: 50%; /* Makes the background circular */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
   }
   /* Hover effect for icons */
   .social-icon:hover {
@@ -290,7 +293,7 @@
 /* Custom CSS for Sticky Navbar */
 /* Navbar Background Color: Pure Black */
 .custom-navbar {
-  background-color: black !important; /* Overrides Bootstrap bg-dark */
+  background-color: black; /* Overrides Bootstrap bg-dark */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Keeps shadow effect */
 }
 
@@ -322,9 +325,18 @@ html {
   color: #126fcd; /* Lighter shade of white when hovering */
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 /* Collapsed menu background (for mobile view) */
 @media (max-width: 992px) {
   .navbar-collapse {
       background-color: black; /* Match navbar background color */
   }
+}
+
+/* Additional CSS for Contact Section */
+.footer {
+  background-color: black;
 }
