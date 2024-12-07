@@ -287,34 +287,44 @@
     border-top: 1px solid #d3d3d3; /* Light grey color */
   }  
   
-  /* CSS for Sticky Navbar */
-  .navbar {
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+/* Custom CSS for Sticky Navbar */
+/* Navbar Background Color: Pure Black */
+.custom-navbar {
+  background-color: black !important; /* Overrides Bootstrap bg-dark */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Keeps shadow effect */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Adjust font size */
+  color: #ffffff; /* White text */
+  font-weight: bold; /* Bold font */
+  text-transform: uppercase; /* Uppercase letters */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white; /* Default link color */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for navigation bar links */
+.navbar-nav .nav-link:hover {
+  color: #126fcd; /* Lighter shade of white when hovering */
+}
+
+/* Collapsed menu background (for mobile view) */
+@media (max-width: 992px) {
+  .navbar-collapse {
+      background-color: black; /* Match navbar background color */
   }
-  
-  /* Ensure padding is added to body to avoid content being hidden behind the navbar */
-  body { 
-    padding-top: 56px; /* Adjust this value based on the height of your navbar */
-  }
-  
-  /* Smooth scroll */
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Style for navigation bar links */
-  .navbar-nav .nav-link {
-    color: white;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #f8f9fa; /* Slightly lighter white when hovering over links */
-  }
-  
-  /* Media query for responsive navbar collapsing */
-  @media (max-width: 992px) {
-    .navbar-collapse {
-      background-color: #343a40; /* Same as navbar color for seamless look */
-    }
-  }
-  
+}
