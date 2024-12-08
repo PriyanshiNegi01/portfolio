@@ -112,6 +112,69 @@
   margin-bottom: 20px;
 }
 
+/* CSS for Skills Section */
+.skills-section {
+  padding: 50px 0;
+  background-color: #3e6787; /* Dark Blue(Slate Blue-Gray) background */
+}
+
+/* Skills Section Heading */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #f0f0f0; /* Light gray text for heading */
+}
+
+/* Skill Item Box Styling */
+.skill-item {
+  background-color: #def4e4; /* Light green(Soft Mint) background for skill boxes */
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Skill Item Image Styling */
+.skill-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+/* Skill Name Styling */
+.skill-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: center;
+  color: #2b2b2b; /* Dark text for skill name */
+}
+
+/* Hover Effect */
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Spacing */
+@media (min-width: 768px) {
+  .skill-item {
+      margin-right: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skill-item {
+      margin-right: 0;
+  }
+}
   
   /* Additional CSS for Projects Section */
   .projects-section {
@@ -151,64 +214,6 @@
     margin-bottom: 15px;
   }
   
-  /* Additional CSS for Skills Section */
-  .skills-section {
-    padding: 50px 0;
-  }
-
-  .skills-section h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-  }
-  
-  .skill-item {
-    background-color: #f8f9fa; /* Background color for the boxes */
-    padding: 15px; /* Adds padding inside the box */
-    border-radius: 10px; /* Rounded corners for the box */
-    display: flex; /* Centers the images inside the box */
-    flex-direction: column; /* Aligns the image and text vertically */
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers the content horizontally */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    margin-bottom: 20px; /* Adds spacing between the skill boxes */
-    height: 200px; /* Ensures all boxes have the same height */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for hover effects */
-  }
-  
-  .skill-item img {
-    width: 80px; /* Fixed width for all images */
-    height: 80px; /* Fixed height for all images */
-    object-fit: contain; /* Ensures that the logos maintain aspect ratio within the given size */
-    margin-bottom: 8px; /* Spacing between the image and the name */
-  }
-  
-  .skill-name {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-top: 5px; /* Adjusts spacing between the name and image */
-    text-align: center; /* Centers the software name text */
-  }
-  
-  /* Hover effect for the skill cards */
-  .skill-item:hover {
-    transform: scale(1.05); /* Slightly enlarges the card */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
-  }
-  
-  /* Grid spacing between columns */
-  @media (min-width: 768px) {
-    .skill-item {
-      margin-right: 15px; /* Adds horizontal spacing between the boxes */
-    }
-  }
-  
-  /* Responsive grid settings */
-  @media (max-width: 767px) {
-    .skill-item {
-      margin-right: 0; /* Removes horizontal spacing on smaller screens */
-    }
-  }
-
  /* Additional CSS for Certifications Section */
   .certifications-section {
     padding: 50px 0;
