@@ -301,7 +301,7 @@
 }
 
 .certifications-section .btn {
-  margin-top: 10px; /* Adds spacing between the text and the button */
+  margin-top: 2px; /* Adds spacing between the text and the button */
   background-color: #3e6787; /* Dark button background color */
   color: #ffffff; /* Light button text color */
   border: none;
