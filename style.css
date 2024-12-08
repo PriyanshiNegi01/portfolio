@@ -62,7 +62,7 @@
 /* CSS for About Section */
 .about-section {
   padding: 50px 0;
-  background-color: #def4e4; /* Light background color matching suggested scheme */
+  background-color: #def4e4; /* Light green(Soft Mint) background color */
 }
 
 .about-heading {
@@ -127,7 +127,7 @@
 
 /* Skill Item Box Styling */
 .skill-item {
-  background-color: #def4e4; /* Light green(Soft Mint) background for skill boxes */
+  background-color: #def4e4; /* Light background for skill boxes */
   padding: 15px;
   border-radius: 10px;
   display: flex;
@@ -176,43 +176,62 @@
   }
 }
   
-  /* Additional CSS for Projects Section */
-  .projects-section {
-    padding: 50px 0;
-    background-color: #f0ded0;
-  }
+/* CSS for Projects Section */
+.projects-section {
+  padding: 50px 0;
+  background-color: #def4e4; /* Light green(Soft Mint) background color */
+}
 
-  .projects-section h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
-  }
-  .card {
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
-    border-radius: 10px; /* Rounding the corners of the card */
-    display: flex; /* Enables flexbox layout for card */
-    flex-direction: column; /* Stacks children vertically */
-    height: 100%; /* Ensures all cards are of equal height */
-  }
-  .card:hover {
-    transform: translateY(-10px); /* Moves the card slightly upwards */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
-  }
-  .card-img-top {
-    max-height: 180px; /* Adjust this value to fit the image properly in the card */
-    object-fit: cover; /* This makes sure the image covers the area properly */
-    border-top-left-radius: 10px; /* Rounding the corners of the img */
-    border-top-right-radius: 10px; /* Rounding the corners of the img */
-  }
-  .card-body {
-    padding: 15px;
-  }
-  .card-title {
-    font-size: 1.25rem;
-  }
-  .card-text {
-    margin-bottom: 15px;
-  }
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #2b2b2b; /* Dark text color for better visibility of the heading */
+}
+
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  border-radius: 10px; /* Rounding the corners of the card */
+  display: flex; /* Enables flexbox layout for card */
+  flex-direction: column; /* Stacks children vertically */
+  height: 100%; /* Ensures all cards are of equal height */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Moves the card slightly upwards */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+}
+
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+  border-top-left-radius: 10px; /* Rounding the corners of the img */
+  border-top-right-radius: 10px; /* Rounding the corners of the img */
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #2b2b2b; /* Dark gray text for the project title */
+}
+
+.card-text {
+  margin-bottom: 15px;
+}
+
+.card .btn-primary {
+  background-color: #007bff; /* Retains the original button color */
+  border-color: #007bff;
+}
+
+.card .btn-secondary {
+  background-color: #6c757d; /* Retains the original button color */
+  border-color: #6c757d;
+}
+
   
  /* Additional CSS for Certifications Section */
   .certifications-section {
