@@ -179,7 +179,7 @@
 /* CSS for Projects Section */
 .projects-section {
   padding: 50px 0;
-  background-color: #def4e4; /* Light green(Soft Mint) background color */
+  background-color: #def4e4; /* Light green (Soft Mint) background color */
 }
 
 .projects-section h2 {
@@ -222,60 +222,97 @@
   margin-bottom: 15px;
 }
 
+/* Updated button styles */
 .card .btn-primary {
-  background-color: #007bff; /* Retains the original button color */
-  border-color: #007bff;
+  background-color: #3e6787; /* Dark blue background color, same as certification cards */
+  border-color: #3e6787; /* Border color matches the button background */
+  color: #fff; /* White text for better contrast */
+}
+
+.card .btn-primary:hover {
+  background-color: #2b2b2b; /* Darker background color on hover */
+  border-color: #2b2b2b; /* Darker border on hover */
 }
 
 .card .btn-secondary {
-  background-color: #6c757d; /* Retains the original button color */
-  border-color: #6c757d;
+  background-color: #3e6787; /* Same button color as the primary button */
+  border-color: #3e6787; /* Border color matches the button background */
+  color: #fff; /* White text for better contrast */
+}
+
+.card .btn-secondary:hover {
+  background-color: #2b2b2b; /* Darker background color on hover */
+  border-color: #2b2b2b; /* Darker border on hover */
 }
 
   
- /* Additional CSS for Certifications Section */
-  .certifications-section {
-    padding: 50px 0;
+/* CSS for Certifications Section */
+.certifications-section {
+  padding: 50px 0;
+  background-color: #3e6787; /* Dark background color for the section */
 }
 
 .certifications-section h2 {
-    margin-bottom: 40px;
-    font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #f0f0f0; /* Light text color for better visibility on dark background */
+}
+
+.certifications-section .row {
+  display: flex;
+  justify-content: center; /* Centers the cards horizontally */
+  flex-wrap: wrap;
 }
 
 .certifications-section .card {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the card */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
-    border-radius: 10px; /* Rounding the corners of the card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+  border-radius: 10px; /* Rounding the corners of the card */
+  max-width: 350px; /* Ensures the card size is similar to project cards */
+  margin: 0 auto; /* Ensures the card is centered */
+  background-color: #ffffff; /* Light background color for the card */
+  color: #2b2b2b; /* Dark text color for content */
 }
 
 .certifications-section .card:hover {
-    transform: translateY(-10px); /* Moves the card slightly upwards */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  transform: translateY(-10px); /* Moves the card slightly upwards */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
 }
 
 .certifications-section .card-img-top {
-    max-height: 180px; /* Adjust this value to fit the image properly in the card */
-    object-fit: cover; /* This makes sure the image covers the area properly */
-    border-top-left-radius: 10px; /* Rounding the corners of the img */
-    border-top-right-radius: 10px; /* Rounding the corners of the img */
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+  border-top-left-radius: 10px; /* Rounding the corners of the img */
+  border-top-right-radius: 10px; /* Rounding the corners of the img */
 }
 
 .certifications-section .card-body {
-    padding: 15px;
+  padding: 15px;
 }
 
 .certifications-section .card-title {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
+  color: #2b2b2b; /* Dark color for title */
 }
 
 .certifications-section .card-text {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+  color: #2b2b2b; /* Dark color for content */
 }
 
 .certifications-section .btn {
-    margin-top: 10px; /* Adds spacing between the text and the button */
+  margin-top: 10px; /* Adds spacing between the text and the button */
+  background-color: #3e6787; /* Dark button background color */
+  color: #ffffff; /* Light button text color */
+  border: none;
+  border-radius: 5px;
 }
+
+.certifications-section .btn:hover {
+  background-color: #2b2b2b; /* Button hover background color */
+  color: #ffffff; /* Button hover text color */
+}
+
   
   /* Additional CSS for Contact Section */
   .contact-section {
