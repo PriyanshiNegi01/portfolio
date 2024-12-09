@@ -123,59 +123,60 @@
   margin-bottom: 40px;
   font-size: 2.5rem;
   color: #f0f0f0; /* Light gray text for heading */
+  text-align: center;
 }
 
-/* Skill Item Box Styling */
-.skill-item {
-  background-color: #def4e4; /* Light background for skill boxes */
-  padding: 15px;
-  border-radius: 10px;
+/* Skill Card */
+.skill-card {
+  background-color: #f0f0f0; /* Light background for skill boxes */
+  border-radius: 20px;
+  border: 0.5px solid #d9d9d9; /* Light gray border */
+  min-width: 8rem;
+  max-width: 8rem;
+  height: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  height: 200px;
+  padding: 15px;
+  margin: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-/* Skill Item Image Styling */
-.skill-item img {
-  width: 80px;
-  height: 80px;
+/* Skill Card Hover Effect */
+.skill-card:hover {
+  transform: scale(1.08); /* Smooth scaling effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background-color: #e6f7ff; /* Slight blue tint on hover */
+  border-color: #3e6787; /* Slate blue-gray border color on hover */
+}
+
+/* Skill Card Image */
+.skill-card img {
+  height: 3rem;
+  width: 3rem;
+  margin: 8px auto;
   object-fit: contain;
-  margin-bottom: 8px;
 }
 
-/* Skill Name Styling */
-.skill-name {
+/* Skill Name */
+.skill-card .skill-name {
+  color: #2b2b2b; /* Dark text for skill name */
   font-size: 1rem;
   font-weight: bold;
-  margin-top: 5px;
   text-align: center;
-  color: #2b2b2b; /* Dark text for skill name */
+  margin-top: 8px;
 }
 
-/* Hover Effect */
-.skill-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+/* Responsive Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* Grid Spacing */
-@media (min-width: 768px) {
-  .skill-item {
-      margin-right: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .skill-item {
-      margin-right: 0;
-  }
-}
-  
 /* CSS for Projects Section */
 .projects-section {
   padding: 50px 0;
@@ -224,7 +225,7 @@
 
 /* Updated button styles */
 .card .btn-primary {
-  background-color: #3e6787; /* Dark blue background color, same as certification cards */
+  background-color: #3e6787; /* Dark blue background color */
   border-color: #3e6787; /* Border color matches the button background */
   color: #fff; /* White text for better contrast */
 }
